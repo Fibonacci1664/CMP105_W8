@@ -12,6 +12,5 @@ public :
 	void move(float dt);
 
 private:
-	sf::Vector2f m_stepVel;
 };
 

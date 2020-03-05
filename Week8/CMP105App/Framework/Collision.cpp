@@ -41,10 +41,12 @@ bool Collision::checkBoundingCircle(GameObject* s1, GameObject* s2)
 	float ypos1 = s1->getPosition().y + radius1;
 	float ypos2 = s2->getPosition().y + radius2;
 
+	// Equation of a circle : (x - a)^2 + (y - b)^2 = r^2
 	if (pow(xpos2 - xpos1, 2) + pow(ypos2 - ypos1, 2) < pow(radius1 + radius2, 2))
 	{
 		return true;
 	}
+
 	return false;
 }
 
