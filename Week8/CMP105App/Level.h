@@ -5,6 +5,7 @@
 #include <string>
 #include <iostream>
 #include "Ball.h"
+#include "Paddle.h"
 
 
 class Level
@@ -23,13 +24,16 @@ private:
 	void endDraw();
 	void loadTextures();
 	void initBoundShapes();
+	void initPaddles();
 	void initBalls();
 
 	sf::Texture m_ballTexture;
 
 	Ball m_ball_1;
-	Ball m_ball_2;
+	//Ball m_ball_2;
 	sf::CircleShape m_circleBounds;
+	Paddle m_leftPaddle;
+	Paddle m_rightPaddle;
 
 	// Default variables for level class.
 	sf::RenderWindow* window;

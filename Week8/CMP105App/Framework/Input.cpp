@@ -7,6 +7,7 @@ Input::Input()
 	mouse.right = false;
 	mouse.x = 0;
 	mouse.y = 0;
+	mouse.mouseWheelDelta = 0;
 }
 
 void Input::setKeyDown(int key)
@@ -76,5 +77,23 @@ void Input::setMouseRDown(bool down)
 bool Input::isMouseRDown()
 {
 	return mouse.right;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+
+// MY OWN FUCNTIONS!!
+
+void Input::setMouseWheelDelta(float delta)
+{
+	mouse.mouseWheelDelta = delta;
+}
+
+float Input::getMouseWheelDelta()
+{
+	return mouse.mouseWheelDelta;
 }
 

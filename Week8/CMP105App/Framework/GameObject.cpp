@@ -48,9 +48,9 @@ sf::FloatRect GameObject::getCollisionBox() {
 // Colliding object is passed in for information
 // e.g. compare sprite positions to determine new velocity direction.
 // e.g. checking sprite type (world, enemy, bullet etc) so response is based on that.
-void GameObject::collisionResponse(GameObject * collider)
+void GameObject::collisionResponse(GameObject* collider)
 {
-	velocity.x = -velocity.x;
+	velocity = -velocity;
 
 	std::cout << "Colliding!\n";
 }

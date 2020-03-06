@@ -12,6 +12,7 @@ private:
 	struct Mouse
 	{
 		int x, y;
+		float mouseWheelDelta;
 		bool left, right;
 	};
 
@@ -32,6 +33,10 @@ public:
 	bool isMouseLDown();
 	void setMouseRDown(bool down);
 	bool isMouseRDown();
+
+	// MY OWN FUNCTIONS!
+	void setMouseWheelDelta(float delta);
+	float getMouseWheelDelta();
 	
 private:
 	// Array of booleans representing keys (pressed = true, released = false)
