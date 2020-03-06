@@ -1,4 +1,5 @@
 #include "GameObject.h"
+#include <iostream>
 
 GameObject::GameObject()
 {
@@ -50,4 +51,6 @@ sf::FloatRect GameObject::getCollisionBox() {
 void GameObject::collisionResponse(GameObject * collider)
 {
 	velocity.x = -velocity.x;
+
+	std::cout << "Colliding!\n";
 }

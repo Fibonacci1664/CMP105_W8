@@ -9,7 +9,7 @@ public :
 
 	void handleInput(float dt) override;
 	void update(float dt) override;
-	void move(float dt);
+	void move(sf::Vector2f vel);
 
 private:
 };
